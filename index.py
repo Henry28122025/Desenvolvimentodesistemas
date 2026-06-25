@@ -8,4 +8,4 @@ for x in range(c):
 
 print("+" + ("-" * l) + "+")
 
-print("Joschins is a monkey")
+print ("Retãngulo pronto")
