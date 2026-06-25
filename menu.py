@@ -9,6 +9,6 @@ largura = 30
 print("+" + ("-" * largura) + "+")
 
 for item in menu:
-    print(f'|{item:<{largura}}|')
+    print(f"|{item:^{largura}}|")
     
     print("+" + ("-" * largura) + "+")
