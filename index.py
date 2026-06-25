@@ -7,3 +7,5 @@ for x in range(c):
     print("|" + (" " * l) + "|")
 
 print("+" + ("-" * l) + "+")
+
+print("Joschins is a monkey")
