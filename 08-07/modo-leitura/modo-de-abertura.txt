@@ -1,0 +1,39 @@
+======================================================================
+         MODOS DE ABERTURA DE ARQUIVOS EM PYTHON (open())
+======================================================================
+
+[r] - READ (Leitura) - Padrão
+----------------------------------------------------------------------
+* O que faz: Abre o arquivo apenas para leitura.
+* Detalhe:   Se o arquivo não existir, gera o erro 'FileNotFoundError'.
+* Cursor:    Começa no início do arquivo.
+
+
+[w] - WRITE (Escrita)
+----------------------------------------------------------------------
+* O que faz: Abre o arquivo apenas para escrita.
+* Detalhe:   CUIDADO! Se o arquivo já existir, ele apaga tudo e recria.
+             Se não existir, ele cria um novo.
+* Cursor:    Começa no início do arquivo.
+
+
+[a] - APPEND (Anexar)
+----------------------------------------------------------------------
+* O que faz: Abre o arquivo para adicionar novos dados.
+* Detalhe:   Não apaga o conteúdo atual. Se o arquivo não existir,
+             ele cria um novo.
+* Cursor:    Vai direto para o final do arquivo.
+
+
+[x] - EXCLUSIVE CREATION (Criação Exclusiva)
+----------------------------------------------------------------------
+* O que faz: Abre o arquivo exclusivamente para ser criado.
+* Detalhe:   Se o arquivo já existir, o Python gera o erro
+             'FileExistsError' para evitar que você apague algo.
+
+
+======================================================================
+                      MODOS COMPLEMENTARES
+======================================================================
+* [b] (Binary): Usado para arquivos binários (imagens, PDFs, fotos).
+* [+] (Update): Abre para ler e escrever ao mesmo tempo (ex: 'r+').
